@@ -3,23 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo usando Script</title>
+    <title>Document</title>
     <script>
-        function saludo() {
-            document.getElementById("msjj").innerHTML = "Buenos dias";
+        let a,b,c
+            a = 4;
+            b = 5;
+            c = a + b;
+            c2 = a - b;
+            c3 = a * b;
+            c4 = a /b;
+
+        function suma()
+        {
+            document.getElementById('a').innerHTML=a
+            document.getElementById('b').innerHTML=b
+            document.getElementById('total').innerHTML=c
+        }
+        function resta()
+        {
+            document.getElementById('a').innerHTML=a
+            document.getElementById('b').innerHTML=b
+            document.getElementById('total').innerHTML=c2
+        }
+
+        function multiplicacion()
+        {
+            document.getElementById('a').innerHTML=a
+            document.getElementById('b').innerHTML=b
+            document.getElementById('total').innerHTML=c3
+        }
+
+        function division()
+        {
+            document.getElementById('a').innerHTML=a
+            document.getElementById('b').innerHTML=b
+            document.getElementById('total').innerHTML=c4
         }
     </script>
+
 </head>
-<title>Ejemplo de Script</title>
 <body>
-    <h1>Ejemplo de Script</h1>
-    <p class="msj" id="msj"></p>
-    <p class="msj" id="msjj"></p>
-    <p class="msj" id="nombre"></p>
-    <script>
-        document.getElementById("msj").innerHTML = "Hola mundo!!! My First JavaScript";
-    </script>
-    <input type="button" value="Clikc Aqui" onclick="saludo()">
-    <button type="button" onclick="document.getElementById('nombre').innerHTML='Mav'">Click Aqui</button>
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="total"></p>
+    <button type="button" onclick="suma()">Suma</button>
+    <button type="button" onclick="resta()">Resta</button>
+    <button type="button" onclick="multiplicacion()">Multiplicacion</button>
+    <button type="button" onclick="division()">Division</button>
+    
 </body>
 </html>
